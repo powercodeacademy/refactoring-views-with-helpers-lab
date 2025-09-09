@@ -1,19 +1,19 @@
-
 source 'https://rubygems.org'
 
 ruby '3.3.5'
-gem 'rails', '~> 7.1.0'
-gem 'sqlite3', '~> 1.6'
+gem 'bootsnap', '>= 1.4.4', require: false
 gem 'jbuilder', '~> 2.11'
 gem 'puma', '~> 6.0'
-gem 'bootsnap', '>= 1.4.4', require: false
+gem 'rails', '~> 7.1.0'
+gem 'sqlite3', '~> 1.6'
 
 group :development, :test do
-  gem 'pry'
   gem 'capybara'
-  gem 'rspec-rails', '~> 6.0'
-  gem 'webrick'
   gem 'ostruct'
+  gem 'pry'
+  gem 'rspec-rails', '~> 6.0'
+  gem 'rubocop', require: false
+  gem 'webrick'
 end
 
 group :development do
